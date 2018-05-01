@@ -1,10 +1,17 @@
-PHP Trello API v1 client
-========================
+>**Disclaimer:** This is a fork of a fork - I forked it so I could add some stuff I'm missing (mainly organization API's).
+>
+>All credit goes to the original creator [cdaguerre/php-trello-api](https://github.com/cdaguerre/php-trello-api) and the repo I forked my fork from [amy-brainlabs/php-trello-api](https://github.com/amy-brainlabs/php-trello-api) as I didnothing but copy/pasting stuff that already was made :P
+>
+>#### Things I added:
+> - Boards API in organization.
+ 
+ 
+*Original unchanged readme.md:*
 
-[![Build Status](https://img.shields.io/travis/cdaguerre/php-trello-api.svg?branch=master&style=flat-square)](https://travis-ci.org/cdaguerre/php-trello-api) 
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/cdaguerre/php-trello-api/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/cdaguerre/php-trello-api/?branch=master)
-[![Code Quality](https://img.shields.io/scrutinizer/g/cdaguerre/php-trello-api.svg?style=flat-square)](https://scrutinizer-ci.com/g/cdaguerre/php-trello-api/)
-[![Packagist](https://img.shields.io/packagist/dt/cdaguerre/php-trello-api.svg?style=flat-square)](https://packagist.org/packages/cdaguerre/php-trello-api)
+PHP Trello API v1 client
+=======================
+
+
 
 A simple Object Oriented wrapper for the Trello API, written in PHP5.
 
