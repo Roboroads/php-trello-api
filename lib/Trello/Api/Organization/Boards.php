@@ -4,12 +4,10 @@ namespace Trello\Api\Organization;
 
 use Trello\Api\AbstractApi;
 use Trello\Api\Board;
-use Trello\Api\Member\Board\Backgrounds;
-use Trello\Api\Member\Board\Stars;
 use Trello\Exception\InvalidArgumentException;
 
 /**
- * Trello Member Boards API
+ * Trello Organization Boards API
  * @link https://trello.com/docs/api/organization
  *
  * Fully implemented.
@@ -43,7 +41,7 @@ class Boards extends AbstractApi
      */
     public function filter($id, $filter = 'all')
     {
-        $allowed = array('all', 'members', 'organization', 'public', 'open', 'closed', 'pinned', 'unpinned', 'starred');
+        $allowed = array('all', 'members', 'organization', 'public', 'open', 'closed', 'starred');
         $filters = $this->validateAllowedParameters($allowed, $filter, 'filter');
         
         return $this->get($this->getPath($id) . '/' . implode(',', $filters));
